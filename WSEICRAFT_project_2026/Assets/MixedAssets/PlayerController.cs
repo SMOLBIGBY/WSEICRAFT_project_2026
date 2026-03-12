@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isFacingRight;
     private Animator anim;
-
-    public GameObjectHandler handler;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -49,7 +47,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         MoveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(MoveInput * speed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(MoveInput * speed, rb.linearVelocity.y);
         if (isFacingRight == true && MoveInput > 0)
         {
             Flip();

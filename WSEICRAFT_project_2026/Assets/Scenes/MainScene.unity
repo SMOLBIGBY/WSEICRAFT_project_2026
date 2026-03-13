@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 358646669}
   - component: {fileID: 358646671}
   - component: {fileID: 358646670}
+  - component: {fileID: 358646672}
   m_Layer: 5
   m_Name: StaminaBarBackground
   m_TagString: Untagged
@@ -580,6 +581,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358646668}
   m_CullTransparentMesh: 1
+--- !u!114 &358646672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358646668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5bd732e76833d459c81173cac9c841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StaminaBarScript
+  StaminaBarImage: {fileID: 1082210122}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +606,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -717,6 +732,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579d02b4aeb204944940683aa2825ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowCamera2D
+  target: {fileID: 531920528}
+  followSpeed: 5
+  offset: {x: 0, y: 0}
+  boundsColliders: []
+  EnableBounds: 1
+  targetWidth: 1
+  startSize: 3.31
+  targetSize: 6
+  zoomSpeed: 1.5
 --- !u!1 &531920524
 GameObject:
   m_ObjectHideFlags: 0

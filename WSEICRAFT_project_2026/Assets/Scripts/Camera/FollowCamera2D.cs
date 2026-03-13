@@ -91,13 +91,7 @@ public class FollowCamera2D : MonoBehaviour
     // -----------------------------
     private void UpdateTarget()
     {
-        //if (_stateManager == null)
-        //    return;
-
-        //if (_stateManager.IsIdle)
-        //    target = GameObject.FindGameObjectWithTag("IdleTarget")?.transform;
-        //else if (_stateManager.IsInShop)
-        //    target = GameObject.FindGameObjectWithTag("ShopTarget")?.transform;
+        target = FindObjectOfType<PlayerController>()?.transform;
 
     }
 
@@ -122,8 +116,7 @@ public class FollowCamera2D : MonoBehaviour
         if (EnableBounds)
             smoothedPos = ClampToBounds(smoothedPos);
 
-        //if (_stateManager == null || !_stateManager.Cutscene)
-        //    transform.position = smoothedPos + shakeOffset;
+        transform.position = smoothedPos + shakeOffset;
     }
 
     // -----------------------------

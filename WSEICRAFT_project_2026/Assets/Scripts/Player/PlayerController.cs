@@ -44,9 +44,9 @@ public class PlayerController : MonoBehaviour
 
     void Run()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && playerManager.CurrentStamina > 0)
         {
-            playerManager.CurrentStamina -= Time.deltaTime * 10f; // Decrease stamina while running
+            playerManager.CurrentStamina -= Time.deltaTime * 20f; // Decrease stamina while running
             isRunning = true;
             speed = 8f; // Increase speed when running
         }

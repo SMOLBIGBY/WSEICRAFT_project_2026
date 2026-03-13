@@ -1,11 +1,13 @@
 # Unity generated folders
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
+./[Ll]ibrary/
+./[Tt]emp/
+./[Oo]bj/
+./[Bb]uild/
+./[Bb]uilds/
+./[Ll]ogs/
+./[Uu]ser[Ss]ettings/
+./.vscode/
+./.vsconfig
 
 # Ignore all logs
 *.log
@@ -66,3 +68,5 @@ WSEICRAFT_project_2026/Logs/AssetImportWorker1.log
 WSEICRAFT_project_2026/Logs/AssetImportWorker0-prev.log
 WSEICRAFT_project_2026/Logs/AssetImportWorker1-prev.log
 WSEICRAFT_project_2026/Logs/AssetImportWorker1.log
+/WSEICRAFT_project_2026/Library
+/WSEICRAFT_project_2026/Temp

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        playerManager = FindAnyObjectByType<PlayerManager>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
+            playerManager.CurrentStamina -= Time.deltaTime * 10f; // Decrease stamina while running
             isRunning = true;
             speed = 8f; // Increase speed when running
         }

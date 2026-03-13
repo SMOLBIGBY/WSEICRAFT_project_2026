@@ -17724,3 +17724,37 @@ Received Import Request.
 Start importing Assets/Scripts/Main Menu/MainMenuScript.cs using Guid(36672c46516ae704b9f2421103085a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abe3af020576dd038e5dad6498c10848') in 0.001829 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 9.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6933 unused Assets / (7.6 MB). Loaded Objects now: 7917.
+Memory consumption went from 159.7 MB to 152.1 MB.
+Total: 53.526000 ms (FindLiveObjects: 2.477400 ms CreateObjectMapping: 4.956300 ms MarkObjects: 32.242500 ms  DeleteObjects: 13.847500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 587.881810 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(13a344b2a680b3641bde8aad5832868e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(13a344b2a680b3641bde8aad5832868e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0835f9ae01896aa1ac76e1f1501324d3') in 0.0045879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.490556 seconds.
+  path: Assets/Scenes/MainScene.unity
+  artifactKey: Guid(5462d5ff60497c04cacd74922a3047e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainScene.unity using Guid(5462d5ff60497c04cacd74922a3047e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a75684ac68c729aa4ed346bc91647e0') in 0.0018181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.858061 seconds.
+  path: Assets/Scripts/Player/PlayerController.cs
+  artifactKey: Guid(6b9fa4efb1d775f46ba0acfb8f22ed60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerController.cs using Guid(6b9fa4efb1d775f46ba0acfb8f22ed60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3dfb6796a21b3f1ff5f27a61e818df7c') in 0.0009835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+

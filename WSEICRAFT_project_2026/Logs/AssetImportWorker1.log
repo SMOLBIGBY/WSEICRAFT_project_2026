@@ -17625,3 +17625,13 @@ Received Import Request.
 Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Capsule.png using Guid(207ee8102dd4143d288186ef0be518ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcebfe6f986f65abcfc5186042506b7e') in 0.0613434 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6933 unused Assets / (6.9 MB). Loaded Objects now: 7921.
+Memory consumption went from 159.9 MB to 153.0 MB.
+Total: 56.385000 ms (FindLiveObjects: 3.053400 ms CreateObjectMapping: 5.003500 ms MarkObjects: 32.051700 ms  DeleteObjects: 16.274300 ms)
+
+Prepare: number of updated asset objects reloaded= 0

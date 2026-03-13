@@ -97,3 +97,6 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+WSEICRAFT_project_2026/Logs/AssetImportWorker0.log
+WSEICRAFT_project_2026/Logs/shadercompiler-AssetImportWorker0-0.log
+WSEICRAFT_project_2026/Logs/shadercompiler-AssetImportWorker1-0.log

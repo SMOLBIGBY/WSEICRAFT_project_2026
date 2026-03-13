@@ -19,7 +19,7 @@ public class FollowCamera2D : MonoBehaviour
     public float targetWidth = 1f; // dynamic width for non-boss states
 
     [Header("Bossfight Zoom")]
-    public float startSize = 3.31f;
+    public float startSize = 5.31f;
     public float targetSize = 6f;
     public float zoomSpeed = 1.5f;
 

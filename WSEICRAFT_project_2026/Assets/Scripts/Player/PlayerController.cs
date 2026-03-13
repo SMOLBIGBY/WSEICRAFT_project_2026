@@ -1,69 +1,69 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    //public bool isHolding = false;
-    [SerializeField] private float speed;
+
+    PlayerManager playerManager;
+
+    [SerializeField] private float speed = 5f;
     [SerializeField] private GameObject playerSprite;
-    //[SerializeField] private AudioClip runSound;
-    //private AudioSource audioSource;
-    private float MoveInput;
+
+    private float moveInput;
     private Rigidbody2D rb;
-    private bool isFacingRight;
-    //private Animator anim;
-    void Start()
+    private bool isFacingRight = true;
+
+    private bool isRunning = false;
+
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        //anim = playerSprite.GetComponent<Animator>();
-        //audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        //if (MoveInput != 0)
-        //{
-        //    anim.SetInteger("State", 1);
+        // Get player input
+        moveInput = Input.GetAxis("Horizontal");
 
-        //}
-        //else if (MoveInput == 0)
-        //{
-        //    anim.SetInteger("State", 0);
-        //}
-        //if (MoveInput != 0)
-        //{
-        //    if (!audioSource.isPlaying)
-        //    {
-        //        audioSource.clip = runSound;
-        //        audioSource.loop = true;
-        //        audioSource.Play();
-        //    }
-        //}
-        //else
-        //{
-        //    if (audioSource.isPlaying) 
-        //    {
-        //        audioSource.Stop();
-        //    }
-        //}
-        MoveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(MoveInput * speed, rb.linearVelocity.y);
-        if (isFacingRight == true && MoveInput > 0)
+        // Flip character
+        if (isFacingRight && moveInput < 0)
         {
             Flip();
         }
-        if (isFacingRight == false && MoveInput < 0)
+        else if (!isFacingRight && moveInput > 0)
         {
             Flip();
         }
     }
+    void FixedUpdate()
+    {
+        Run();
+        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+    }
+    
+
+    void Run()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            isRunning = true;
+            speed = 8f; // Increase speed when running
+        }
+        else
+        {
+            isRunning = false;
+            speed = 5f; // Reset to normal speed when not running
+        }
+        
+    }
+
+
+
     void Flip()
     {
         isFacingRight = !isFacingRight;
-        Vector3 Scaler = gameObject.transform.localScale;
-        Scaler.x *= -1;
-        gameObject.transform.localScale = Scaler;
-    }  
+
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
 }
-
-

@@ -63,3 +63,6 @@ crashlytics-build.properties
 *.unitypackage
 *.app
 WSEICRAFT_project_2026/Logs/AssetImportWorker1.log
+WSEICRAFT_project_2026/Logs/AssetImportWorker0-prev.log
+WSEICRAFT_project_2026/Logs/AssetImportWorker1-prev.log
+WSEICRAFT_project_2026/Logs/AssetImportWorker1.log

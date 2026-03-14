@@ -6,7 +6,7 @@ public class AnomalyManager : MonoBehaviour
 
     void Start()
     {
-        int day = GameManager.Instance.currentDay;
+        int day = DayManager.Instance.currentDay;
 
         if (day == 1)
         {

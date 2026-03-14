@@ -4,10 +4,13 @@ using System.Collections;
 [RequireComponent(typeof(CanvasGroup))]
 public class GameOverScreen : MonoBehaviour
 {
-    DayManager dayManager;
     [Header("Fade")]
     [SerializeField] private float fadeDuration = 1.5f;
     [SerializeField] private bool ignoreTimeScale = true;
+
+    [Header("Next Scene")]
+    [SerializeField] private float loadSceneDelay = 3f;
+    [SerializeField] private MainMenuScript mainMenuScript;
 
     [Header("Audio")]
     [SerializeField] private AudioClip deathSound;
@@ -15,6 +18,7 @@ public class GameOverScreen : MonoBehaviour
 
     private CanvasGroup canvasGroup;
     private Coroutine fadeCoroutine;
+    private Coroutine loadCoroutine;
     private bool isDead;
 
     private void Awake()
@@ -28,17 +32,18 @@ public class GameOverScreen : MonoBehaviour
             return;
         }
 
-        canvasGroup.alpha = 0f;
-        canvasGroup.blocksRaycasts = false;
-        canvasGroup.interactable = false;
+        HideInstantly();
     }
-    void Start()
+
+    private void Start()
     {
-        dayManager = FindAnyObjectByType<DayManager>();
+        if (mainMenuScript == null)
+            mainMenuScript = FindObjectOfType<MainMenuScript>();
     }
+
+
     public void Die()
     {
-        dayManager.ResetDays();
         if (isDead)
             return;
 
@@ -50,10 +55,14 @@ public class GameOverScreen : MonoBehaviour
         if (fadeCoroutine != null)
             StopCoroutine(fadeCoroutine);
 
+        if (loadCoroutine != null)
+            StopCoroutine(loadCoroutine);
+
         if (deathSound != null)
             OneShotAudio.Play2D(deathSound, deathSoundVolume);
 
         fadeCoroutine = StartCoroutine(FadeInRoutine());
+        loadCoroutine = StartCoroutine(LoadSceneAfterDelay());
     }
 
     private IEnumerator FadeInRoutine()
@@ -75,6 +84,26 @@ public class GameOverScreen : MonoBehaviour
         }
 
         canvasGroup.alpha = 1f;
+        fadeCoroutine = null;
+    }
+
+    private IEnumerator LoadSceneAfterDelay()
+    {
+        if (ignoreTimeScale)
+            yield return new WaitForSecondsRealtime(loadSceneDelay);
+        else
+            yield return new WaitForSeconds(loadSceneDelay);
+
+        if (mainMenuScript != null)
+        {
+            mainMenuScript.LoadSelectedScene();
+        }
+        else
+        {
+            Debug.LogWarning("MainMenuScript not found!");
+        }
+
+        loadCoroutine = null;
     }
 
     public void ResetDeathFade()
@@ -87,6 +116,17 @@ public class GameOverScreen : MonoBehaviour
             fadeCoroutine = null;
         }
 
+        if (loadCoroutine != null)
+        {
+            StopCoroutine(loadCoroutine);
+            loadCoroutine = null;
+        }
+
+        HideInstantly();
+    }
+
+    private void HideInstantly()
+    {
         canvasGroup.alpha = 0f;
         canvasGroup.blocksRaycasts = false;
         canvasGroup.interactable = false;

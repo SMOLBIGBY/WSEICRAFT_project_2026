@@ -4,12 +4,14 @@ using UnityEngine.SceneManagement;
 public class DayManager : MonoBehaviour
 {
     public static DayManager Instance;
+    WinScreen winScreen;
 
     public int currentDay;
-    public int maxDays = 7;
+    public int maxDays = 5;
 
     void Awake()
     {
+        winScreen = FindAnyObjectByType<WinScreen>();
         if (Instance == null)
         {
             Instance = this;
@@ -26,6 +28,7 @@ public class DayManager : MonoBehaviour
 
     void Update()
     {
+ 
         // Debug reset
         if (Input.GetKeyDown(KeyCode.N))
         {
@@ -41,17 +44,22 @@ public class DayManager : MonoBehaviour
     public void NextDay()
     {
         currentDay += 1;
-
-        if (currentDay > maxDays)
+        if(currentDay <= 5)
         {
-            currentDay = maxDays;
+
+
+            PlayerPrefs.SetInt("CurrentDay", currentDay);
+            PlayerPrefs.Save();
         }
-
-        PlayerPrefs.SetInt("CurrentDay", currentDay);
-        PlayerPrefs.Save();
-
+        if (currentDay > 5)
+        {
+            winScreen.Win();
+        }
         // Reload scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (currentDay <= 5)
+        {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void ResetDays()

@@ -11,6 +11,8 @@ public class WinScreen : MonoBehaviour
     [SerializeField] private float loadSceneDelay = 3f;
     [SerializeField] private MainMenuScript mainMenuScript;
 
+    DayManager dayManager;
+
     [Header("Audio")]
     [SerializeField] private AudioClip winSound;
     [SerializeField] private float winSoundVolume = 1f;
@@ -36,6 +38,7 @@ public class WinScreen : MonoBehaviour
 
     private void Start()
     {
+        dayManager = FindAnyObjectByType<DayManager>();
         if (mainMenuScript == null)
             mainMenuScript = FindObjectOfType<MainMenuScript>();
     }
@@ -44,8 +47,8 @@ public class WinScreen : MonoBehaviour
 
     public void Win()
     {
-        if (isShown)
-            return;
+        Debug.Log("Player has won the game!");
+
 
         isShown = true;
         Time.timeScale = 1f;
@@ -93,6 +96,8 @@ public class WinScreen : MonoBehaviour
 
         if (mainMenuScript != null)
         {
+            dayManager.ResetDays();
+
             mainMenuScript.LoadSelectedScene();
         }
         else

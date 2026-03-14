@@ -1,0 +1,603 @@
+fileFormatVersion: 2
+guid: 77456490fd57655488248bce7698ab15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8000290678979585044
+    second: chodzenie (1)_0
+  - first:
+      213: -7892402784768714388
+    second: chodzenie (1)_1
+  - first:
+      213: -7600291955134233034
+    second: chodzenie (1)_2
+  - first:
+      213: -9086956622459411529
+    second: chodzenie (1)_3
+  - first:
+      213: -235049253341782798
+    second: chodzenie (1)_4
+  - first:
+      213: -4181630309288674164
+    second: chodzenie (1)_5
+  - first:
+      213: 8968944810009410821
+    second: chodzenie (1)_6
+  - first:
+      213: -5597616238424205060
+    second: chodzenie (1)_7
+  - first:
+      213: -4160352091445186357
+    second: chodzenie (1)_8
+  - first:
+      213: 2720941536302690183
+    second: chodzenie (1)_9
+  - first:
+      213: -4701358995730682388
+    second: chodzenie (1)_10
+  - first:
+      213: 8369613621337564115
+    second: chodzenie (1)_11
+  - first:
+      213: 8556311368483381103
+    second: chodzenie (1)_12
+  - first:
+      213: 8005184512543824770
+    second: chodzenie (1)_13
+  - first:
+      213: -3477501060031683224
+    second: chodzenie (1)_14
+  - first:
+      213: -4704786774509670457
+    second: chodzenie (1)_15
+  - first:
+      213: 389641633289647169
+    second: chodzenie (1)_16
+  - first:
+      213: -4889009071262451021
+    second: chodzenie (1)_17
+  - first:
+      213: -7937041119198831209
+    second: chodzenie (1)_18
+  - first:
+      213: 5626919520817693361
+    second: chodzenie (1)_19
+  - first:
+      213: -306775284997108160
+    second: chodzenie (1)_20
+  - first:
+      213: 8028245085256714956
+    second: chodzenie (1)_21
+  - first:
+      213: 1928111063391718110
+    second: chodzenie (1)_22
+  - first:
+      213: -7092540737051165237
+    second: chodzenie (1)_23
+  - first:
+      213: 4065189384824324460
+    second: chodzenie (1)_24
+  - first:
+      213: -4047826640691532802
+    second: chodzenie (1)_25
+  - first:
+      213: 2153971088744719744
+    second: chodzenie (1)_26
+  - first:
+      213: 6896026768153528838
+    second: chodzenie (1)_27
+  - first:
+      213: 3259922065782537079
+    second: chodzenie (1)_28
+  - first:
+      213: -4801322988068607293
+    second: chodzenie (1)_29
+  - first:
+      213: -9178659797047448970
+    second: chodzenie (1)_30
+  - first:
+      213: -4100075014280572034
+    second: chodzenie (1)_31
+  - first:
+      213: 935711054461453519
+    second: chodzenie (1)_32
+  - first:
+      213: 9136881277467822762
+    second: chodzenie (1)_33
+  - first:
+      213: 8094613770178982566
+    second: chodzenie (1)_34
+  - first:
+      213: -6110527035929020250
+    second: chodzenie (1)_35
+  - first:
+      213: 7279742738860047780
+    second: chodzenie (1)_36
+  - first:
+      213: -4570031507017876117
+    second: chodzenie (1)_37
+  - first:
+      213: -6137388589031037049
+    second: chodzenie (1)_38
+  - first:
+      213: 6332579138818644572
+    second: chodzenie (1)_39
+  - first:
+      213: 1098665936634497448
+    second: chodzenie (1)_40
+  - first:
+      213: -5906259258896730888
+    second: chodzenie (1)_41
+  - first:
+      213: 1308466656505568617
+    second: chodzenie (1)_42
+  - first:
+      213: -7421022847365182034
+    second: chodzenie (1)_43
+  - first:
+      213: 6024027155321521341
+    second: chodzenie (1)_44
+  - first:
+      213: 7011288592850411929
+    second: chodzenie (1)_45
+  - first:
+      213: 7118605146082684257
+    second: chodzenie (1)_46
+  - first:
+      213: 5995264672101284957
+    second: chodzenie (1)_47
+  - first:
+      213: 7989576453322294633
+    second: chodzenie (1)_48
+  - first:
+      213: 6344452809657488817
+    second: chodzenie (1)_49
+  - first:
+      213: 4034408240547275795
+    second: chodzenie (1)_50
+  - first:
+      213: 7721069622371962034
+    second: chodzenie (1)_51
+  - first:
+      213: 2453466979874161398
+    second: chodzenie (1)_52
+  - first:
+      213: -3546917117468454736
+    second: chodzenie (1)_53
+  - first:
+      213: 2217001029376388728
+    second: chodzenie (1)_54
+  - first:
+      213: 4722496169345991728
+    second: chodzenie (1)_55
+  - first:
+      213: -5765126329013456645
+    second: chodzenie (1)_56
+  - first:
+      213: -2304023214353748450
+    second: chodzenie (1)_57
+  - first:
+      213: 6343160644654815907
+    second: chodzenie (1)_58
+  - first:
+      213: 3238856692464133117
+    second: chodzenie (1)_59
+  - first:
+      213: -120406908987855527
+    second: chodzenie (1)_60
+  - first:
+      213: 102841839715197812
+    second: chodzenie (1)_61
+  - first:
+      213: -9123308225800562043
+    second: chodzenie (1)_62
+  - first:
+      213: -6226184378534057671
+    second: chodzenie (1)_63
+  - first:
+      213: -2020921717724965372
+    second: chodzenie (1)_64
+  - first:
+      213: -5277300406391662862
+    second: chodzenie (1)_65
+  - first:
+      213: -4152276055670265655
+    second: chodzenie (1)_66
+  - first:
+      213: 1097374502614448449
+    second: chodzenie (1)_67
+  - first:
+      213: -5539022314772059021
+    second: chodzenie (1)_68
+  - first:
+      213: -6932048061829463142
+    second: chodzenie (1)_69
+  - first:
+      213: -3685432566480223483
+    second: chodzenie (1)_70
+  - first:
+      213: 1760686392023416661
+    second: chodzenie (1)_71
+  - first:
+      213: -5823407018854841547
+    second: chodzenie (1)_72
+  - first:
+      213: -4530789592879626719
+    second: chodzenie (1)_73
+  - first:
+      213: -8057349562180488267
+    second: chodzenie (1)_74
+  - first:
+      213: 8340519578924697306
+    second: chodzenie (1)_75
+  - first:
+      213: -1544993761839000737
+    second: chodzenie (1)_76
+  - first:
+      213: -3768641967342871495
+    second: chodzenie (1)_77
+  - first:
+      213: -2675117565242503561
+    second: chodzenie (1)_78
+  - first:
+      213: -2080270895523881556
+    second: chodzenie (1)_79
+  - first:
+      213: 6096470947236279576
+    second: chodzenie (1)_80
+  - first:
+      213: 1432720881793194804
+    second: chodzenie (1)_81
+  - first:
+      213: 4038056666097356140
+    second: chodzenie (1)_82
+  - first:
+      213: 987274112598793626
+    second: chodzenie (1)_83
+  - first:
+      213: 3649377226639661302
+    second: chodzenie (1)_84
+  - first:
+      213: -4453258481390112187
+    second: chodzenie (1)_85
+  - first:
+      213: 6388380786667657743
+    second: chodzenie (1)_86
+  - first:
+      213: -929394326217767880
+    second: chodzenie (1)_87
+  - first:
+      213: 5064720778844139351
+    second: chodzenie (1)_88
+  - first:
+      213: -7683894766810144286
+    second: chodzenie (1)_89
+  - first:
+      213: 425280092744731561
+    second: chodzenie (1)_90
+  - first:
+      213: -9127381739214471411
+    second: chodzenie (1)_91
+  - first:
+      213: 8470317753246501091
+    second: chodzenie (1)_92
+  - first:
+      213: -8143081905972103674
+    second: chodzenie (1)_93
+  - first:
+      213: -389261835961565275
+    second: chodzenie (1)_94
+  - first:
+      213: -5690380753338767945
+    second: chodzenie (1)_95
+  - first:
+      213: -2814711076904318885
+    second: chodzenie (1)_96
+  - first:
+      213: 3335907753735047679
+    second: chodzenie (1)_97
+  - first:
+      213: 8181578600113407453
+    second: chodzenie (1)_98
+  - first:
+      213: -4528754700611934452
+    second: chodzenie (1)_99
+  - first:
+      213: -6375704950178750235
+    second: chodzenie (1)_100
+  - first:
+      213: -5793648402243198841
+    second: chodzenie (1)_101
+  - first:
+      213: 1370621136650836244
+    second: chodzenie (1)_102
+  - first:
+      213: 6746648586786150319
+    second: chodzenie (1)_103
+  - first:
+      213: -1544141895005347119
+    second: chodzenie (1)_104
+  - first:
+      213: -4453128631728711928
+    second: chodzenie (1)_105
+  - first:
+      213: 164705881368785098
+    second: chodzenie (1)_106
+  - first:
+      213: 7831224991975086525
+    second: chodzenie (1)_107
+  - first:
+      213: 1939218730241350593
+    second: chodzenie (1)_108
+  - first:
+      213: 7624821637720503016
+    second: chodzenie (1)_109
+  - first:
+      213: 8451234405728424123
+    second: chodzenie (1)_110
+  - first:
+      213: 7982401322003409678
+    second: chodzenie (1)_111
+  - first:
+      213: -2157189983092762396
+    second: chodzenie (1)_112
+  - first:
+      213: -2960691943955252172
+    second: chodzenie (1)_113
+  - first:
+      213: -3036476243816408149
+    second: chodzenie (1)_114
+  - first:
+      213: -1867806483084968732
+    second: chodzenie (1)_115
+  - first:
+      213: 1101417710261361848
+    second: chodzenie (1)_116
+  - first:
+      213: 3453224691128214752
+    second: chodzenie (1)_117
+  - first:
+      213: 1031858630226861662
+    second: chodzenie (1)_118
+  - first:
+      213: -1341196070140349557
+    second: chodzenie (1)_119
+  - first:
+      213: 138547628364217744
+    second: chodzenie (1)_120
+  - first:
+      213: -1461902920593491909
+    second: chodzenie (1)_121
+  - first:
+      213: 881651231830904486
+    second: chodzenie (1)_122
+  - first:
+      213: 4654963747490327276
+    second: chodzenie (1)_123
+  - first:
+      213: -5354482732236729331
+    second: chodzenie (1)_124
+  - first:
+      213: 1182200839401591582
+    second: chodzenie (1)_125
+  - first:
+      213: 8220539577900880946
+    second: chodzenie (1)_126
+  - first:
+      213: -8214616488046495803
+    second: chodzenie (1)_127
+  - first:
+      213: 3923762812256315423
+    second: chodzenie (1)_128
+  - first:
+      213: -1833135478320766257
+    second: chodzenie (1)_129
+  - first:
+      213: -1645373959394983230
+    second: chodzenie (1)_130
+  - first:
+      213: -7429711363850784882
+    second: chodzenie (1)_131
+  - first:
+      213: 7158142734223282839
+    second: chodzenie (1)_132
+  - first:
+      213: -5785716823150610123
+    second: chodzenie (1)_133
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chodzenie (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3000
+        height: 2400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41462743cfdb60f60800000000000000
+      internalID: 8000290678979585044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chodzenie (1)_1
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 3000
+        height: 2400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c699e85ab7d887290800000000000000
+      internalID: -7892402784768714388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chodzenie (1)_2
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 3000
+        height: 2400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63607f02cb6568690800000000000000
+      internalID: -7600291955134233034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4417a3f43d51cf849be2f19de3e4d69c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":3000.0,"y":2400.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      chodzenie (1)_0: 8000290678979585044
+      chodzenie (1)_1: -7892402784768714388
+      chodzenie (1)_2: -7600291955134233034
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

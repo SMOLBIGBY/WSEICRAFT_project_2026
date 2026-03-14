@@ -7,6 +7,9 @@ public class PlayerManager : MonoBehaviour
 
     public float CurrentStamina = 100f;
 
+    public bool CanTeleport = true;
+
+    public bool CanMove = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -5,7 +5,7 @@ using TMPro;
 [RequireComponent(typeof(CanvasGroup))]
 public class DayBlackScreen : MonoBehaviour
 {
-
+    PlayerManager playerManager;
     DayManager dayManager;
     public static bool IsTransitionActive { get; private set; }
 
@@ -73,6 +73,7 @@ public class DayBlackScreen : MonoBehaviour
 
     private void Start()
     {
+        playerManager = FindAnyObjectByType<PlayerManager>();
         dayManager = FindAnyObjectByType<DayManager>();
         PlayIntro();
     }
@@ -87,6 +88,7 @@ public class DayBlackScreen : MonoBehaviour
 
     public void PlayIntro()
     {
+        playerManager.CanMove = false;
         if (!gameObject.activeSelf)
             gameObject.SetActive(true);
 
@@ -142,6 +144,7 @@ public class DayBlackScreen : MonoBehaviour
 
         if (finalDaySound != null)
             OneShotAudio.Play2D(finalDaySound, finalDayVolume);
+        playerManager.CanMove = true;
 
         yield return new WaitForSecondsRealtime(finalDayHoldTime);
 

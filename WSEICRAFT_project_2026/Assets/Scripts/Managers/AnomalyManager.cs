@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class AnomalyManager : MonoBehaviour
 {
+    
     public Anomaly[] anomalies;
+    public bool AnomalyActive { get; private set; }
 
     void Start()
     {
@@ -11,6 +13,7 @@ public class AnomalyManager : MonoBehaviour
         if (day == 1)
         {
             Debug.Log("Day 1: No anomaly");
+            AnomalyActive = false;
             return;
         }
 
@@ -19,9 +22,11 @@ public class AnomalyManager : MonoBehaviour
         if (chance <= 0.5f)
         {
             Debug.Log("No anomaly today");
+            AnomalyActive = false;
         }
         else
         {
+            AnomalyActive = true;
             SpawnRandomAnomaly();
         }
     }

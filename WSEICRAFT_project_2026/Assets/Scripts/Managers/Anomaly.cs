@@ -18,6 +18,7 @@ public class Anomaly : MonoBehaviour
     public AnomalyType type;
 
     public Transform targetObject;
+    public GameObject removeObject;
 
     public Vector3 movePosition;
     public float rotationZ; // 2D rotation only on Z axis
@@ -29,6 +30,8 @@ public class Anomaly : MonoBehaviour
     public float ToggleDelay = 1f;
 
     public float SpawnDelay = 3f;
+
+    public bool ObjectShouldBeRemoved = false;
 
     void Start()
     {
@@ -91,6 +94,10 @@ public class Anomaly : MonoBehaviour
             yield return new WaitForSeconds(delay);
             if (toggleObject != null)
                 toggleObject.SetActive(!toggleObject.activeSelf);
+                if (ObjectShouldBeRemoved)
+                {
+                    removeObject.SetActive(false);
+                }
                 Debug.Log($"Toggled {toggleObject.name} to {(toggleObject.activeSelf ? "active" : "inactive")} after delay");
         }
     }

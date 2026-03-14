@@ -4,34 +4,33 @@ using System.Collections;
 
 public class MainMenuScript : MonoBehaviour
 {
-    BlackScreenFade blackScreenFade;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private BlackScreenFade blackScreenFade;
+
+    [SerializeField] private string sceneName;
+    [SerializeField] private float fadeWaitTime = 1f;
+
+    private void Start()
     {
         blackScreenFade = FindObjectOfType<BlackScreenFade>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlayButton()
     {
-        // Load the next scene (assuming the next scene is at index 1)
-        StartCoroutine(LoadSceneWithFade(1));
+        LoadSelectedScene();
     }
 
-    IEnumerator LoadSceneWithFade(int sceneIndex)
+    public void LoadSelectedScene()
     {
-        // Start the fade-out effect
-        blackScreenFade.FadeIn();
+        StartCoroutine(LoadSceneWithFade(sceneName));
+    }
 
-        // Wait for the fade-out to complete (assuming it takes 1 second)
-        yield return new WaitForSeconds(1f);
+    private IEnumerator LoadSceneWithFade(string targetScene)
+    {
+        if (blackScreenFade != null)
+            blackScreenFade.FadeIn();
 
-        // Load the next scene
-        SceneManager.LoadScene(1);
+        yield return new WaitForSeconds(fadeWaitTime);
+
+        SceneManager.LoadScene(targetScene);
     }
 }

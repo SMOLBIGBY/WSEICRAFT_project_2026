@@ -4,11 +4,11 @@
 [RequireComponent(typeof(AudioSource))]
 public class PlayerController : MonoBehaviour
 {
+    Animator animator;
     private PlayerManager playerManager;
 
     [Header("Movement")]
     [SerializeField] private float walkSpeed = 5f;
-    [SerializeField] private float runSpeed = 8f;
     [SerializeField] private GameObject playerSprite;
 
     [Header("Footstep Sound")]
@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        animator = playerSprite.GetComponent<Animator>();
         playerManager = FindAnyObjectByType<PlayerManager>();
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
@@ -43,6 +44,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
+        if (rb.linearVelocity.x != 0)
+        {
+            animator.SetTrigger("IsRunning");
+        }
+        else
+        {
+            animator.SetTrigger("IsIdle");
+        }
         moveInput = Input.GetAxisRaw("Horizontal");
 
         if (isFacingRight && moveInput < 0)
@@ -54,29 +64,28 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
-        Run();
         HandleFootsteps();
+
+        if (!playerManager.CanMove)
+        {
+            rb.linearVelocity = Vector2.zero;
+            walkSpeed = 0f;
+        }
+        else if (walkSpeed == 0f)
+        {
+            rb.linearVelocity = Vector2.zero;
+            walkSpeed = 5f;
+        }
     }
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput * currentSpeed, rb.linearVelocity.y);
+        if (playerManager.CanMove)
+        {
+            rb.linearVelocity = new Vector2(moveInput * currentSpeed, rb.linearVelocity.y);
+        }
     }
 
-    void Run()
-    {
-        if (Input.GetKey(KeyCode.LeftShift) && playerManager.CurrentStamina > 0 && moveInput != 0)
-        {
-            playerManager.CurrentStamina -= Time.deltaTime * 20f;
-            isRunning = true;
-            currentSpeed = runSpeed;
-        }
-        else
-        {
-            isRunning = false;
-            currentSpeed = walkSpeed;
-        }
-    }
 
     void HandleFootsteps()
     {

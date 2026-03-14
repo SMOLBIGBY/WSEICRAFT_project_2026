@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(CanvasGroup))]
 public class GameOverScreen : MonoBehaviour
 {
+    DayManager dayManager;
     [Header("Fade")]
     [SerializeField] private float fadeDuration = 1.5f;
     [SerializeField] private bool ignoreTimeScale = true;
@@ -31,9 +32,13 @@ public class GameOverScreen : MonoBehaviour
         canvasGroup.blocksRaycasts = false;
         canvasGroup.interactable = false;
     }
-
+    void Start()
+    {
+        dayManager = FindAnyObjectByType<DayManager>();
+    }
     public void Die()
     {
+        dayManager.ResetDays();
         if (isDead)
             return;
 

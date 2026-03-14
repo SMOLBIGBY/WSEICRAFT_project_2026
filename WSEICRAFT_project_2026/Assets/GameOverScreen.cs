@@ -31,13 +31,7 @@ public class GameOverScreen : MonoBehaviour
         canvasGroup.blocksRaycasts = false;
         canvasGroup.interactable = false;
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Die();
-        }
-    }
+
     public void Die()
     {
         if (isDead)

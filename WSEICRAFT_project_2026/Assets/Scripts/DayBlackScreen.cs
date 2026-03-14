@@ -73,6 +73,7 @@ public class DayBlackScreen : MonoBehaviour
 
     private void Start()
     {
+        dayManager = FindAnyObjectByType<DayManager>();
         PlayIntro();
     }
 

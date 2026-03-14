@@ -3,9 +3,12 @@ using UnityEngine;
 public class TriggerObject : MonoBehaviour
 {
     private GameObject ebutton;
-    private void Start()
+    void Awake()
     {
-        ebutton = FindAnyObjectByType<Ebutton>().gameObject;   
+        ebutton = FindAnyObjectByType<Ebutton>().gameObject;
+    }
+    private void Start()
+    { 
         ebutton.SetActive(false);
     }
 

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RoomTranslation : MonoBehaviour
 {
+    FollowCamera2D cameraScript;
     private Player playerScript;
     private bool inCollision = false;
     private BlackScreenFade blackScreen;
@@ -13,6 +14,7 @@ public class RoomTranslation : MonoBehaviour
 
     void Start()
     {
+        cameraScript = FindAnyObjectByType<FollowCamera2D>();
         playerScript = FindAnyObjectByType<Player>();
         blackScreen = FindAnyObjectByType<BlackScreenFade>();
     }
@@ -28,13 +30,13 @@ public class RoomTranslation : MonoBehaviour
     IEnumerator TeleportWithDelay()
     {
         blackScreen.FadeIn();
-
-        yield return new WaitForSeconds(teleportDelay); // задержка перед телепортом
-
+        
+        yield return new WaitForSeconds(teleportDelay); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        cameraScript.EnableBounds = false; // Disable camera bounds during teleportation
         playerScript.transform.position = teleportPoint.transform.position;
 
-        yield return new WaitForSeconds(blackScreenTime); // сколько экран остаётся чёрным
-
+        yield return new WaitForSeconds(blackScreenTime); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        cameraScript.EnableBounds = true; // Disable camera bounds during teleportation
         blackScreen.FadeOut();
     }
 

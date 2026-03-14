@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Anomaly : MonoBehaviour
 {
@@ -7,8 +8,12 @@ public class Anomaly : MonoBehaviour
         MoveObject,
         ChangeColor,
         RotateObject,
-        ToggleObject
+        ToggleObject,
+
+        SpawnPrefab
     }
+
+    public Transform playerPosition; // Reference to the player's position for potential use in anomalies
 
     public AnomalyType type;
 
@@ -21,6 +26,14 @@ public class Anomaly : MonoBehaviour
 
     public GameObject toggleObject;
 
+    public float ToggleDelay = 1f;
+
+    public float SpawnDelay = 3f;
+
+    void Start()
+    {
+        playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     public void Activate()
     {
         switch (type)
@@ -54,11 +67,31 @@ public class Anomaly : MonoBehaviour
                 break;
 
             case AnomalyType.ToggleObject:
-                if (toggleObject != null)
-                    toggleObject.SetActive(!toggleObject.activeSelf);
+                StartCoroutine(ToggleAfterDelay(ToggleDelay));
+                break;
+
+            case AnomalyType.SpawnPrefab:
+                StartCoroutine(SpawnAfterDelay(SpawnDelay));
                 break;
         }
 
         Debug.Log("Anomaly triggered: " + gameObject.name);
+
+
+
+        IEnumerator SpawnAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            Vector3 spawnPosition = playerPosition.position + new Vector3(10f, 0f, 0f);
+            Instantiate(targetObject, spawnPosition, Quaternion.identity);
+            Debug.Log($"Spawned {targetObject.name} at {spawnPosition} after delay");
+        }
+        IEnumerator ToggleAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            if (toggleObject != null)
+                toggleObject.SetActive(!toggleObject.activeSelf);
+                Debug.Log($"Toggled {toggleObject.name} to {(toggleObject.activeSelf ? "active" : "inactive")} after delay");
+        }
     }
 }

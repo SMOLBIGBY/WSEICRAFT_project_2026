@@ -11,6 +11,7 @@ public class DayManager : MonoBehaviour
 
     void Awake()
     {
+
         winScreen = FindAnyObjectByType<WinScreen>();
         if (Instance == null)
         {

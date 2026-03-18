@@ -23,6 +23,10 @@ public class MainMenuScript : MonoBehaviour
     {
         StartCoroutine(LoadSceneWithFade(sceneName));
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 
     private IEnumerator LoadSceneWithFade(string targetScene)
     {

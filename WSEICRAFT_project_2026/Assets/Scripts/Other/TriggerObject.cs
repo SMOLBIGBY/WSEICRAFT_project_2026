@@ -14,16 +14,22 @@ public class TriggerObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ebutton != null)
+        if (collision.CompareTag("Player"))
         {
-            ebutton.gameObject.SetActive(true);
+            if (ebutton != null)
+            {
+                ebutton.gameObject.SetActive(true);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (ebutton != null)
+        if (collision.CompareTag("Player"))
         {
-            ebutton.gameObject.SetActive(false);
+            if (ebutton != null)
+            {
+                ebutton.gameObject.SetActive(false);
+            }
         }
     }
 }

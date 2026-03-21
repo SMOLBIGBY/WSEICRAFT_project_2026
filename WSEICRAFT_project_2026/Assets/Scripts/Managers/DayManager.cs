@@ -52,14 +52,14 @@ public class DayManager : MonoBehaviour
             PlayerPrefs.SetInt("CurrentDay", currentDay);
             PlayerPrefs.Save();
         }
-        if (currentDay > 5)
+        if (currentDay > maxDays)
         {
             winScreen.Win();
         }
         // Reload scene
-        if (currentDay <= 5)
+        if (currentDay <= maxDays)
         {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

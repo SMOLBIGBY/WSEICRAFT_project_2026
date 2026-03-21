@@ -55,6 +55,7 @@ public class RoomTranslation : MonoBehaviour
 
         cameraScript.EnableBounds = true;
         playerManager.CanMove = true;
+        yield return new WaitForSeconds(0.2f);
         blackScreen.FadeOut();
         yield return new WaitForSeconds(2f);
         playerManager.CanTeleport = true;

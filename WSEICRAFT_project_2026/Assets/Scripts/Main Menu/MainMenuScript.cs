@@ -5,17 +5,21 @@ using System.Collections;
 public class MainMenuScript : MonoBehaviour
 {
     private BlackScreenFade blackScreenFade;
+    DayManager dayManager;
 
     [SerializeField] private string sceneName;
     [SerializeField] private float fadeWaitTime = 1f;
 
     private void Start()
     {
+        dayManager = FindObjectOfType<DayManager>();
         blackScreenFade = FindObjectOfType<BlackScreenFade>();
     }
 
     public void PlayButton()
     {
+
+        PlayerPrefs.SetInt("CurrentDay", 1);
         LoadSelectedScene();
     }
 
